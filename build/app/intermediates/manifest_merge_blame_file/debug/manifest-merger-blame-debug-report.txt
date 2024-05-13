@@ -1,0 +1,106 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.drone_motores"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/debug/AndroidManifest.xml:6:5-66
+15-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/debug/AndroidManifest.xml:6:22-64
+16    <uses-permission android:name="android.permission.BLUETOOTH" />
+16-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:3:5-68
+16-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:3:22-65
+17    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+17-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:6:5-76
+17-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:6:22-73
+18    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+18-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:7:5-73
+18-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:7:22-70
+19    <!--
+20 Required to query activities that can process text, see:
+21         https://developer.android.com/training/package-visibility?hl=en and
+22         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+23
+24         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+25    -->
+26    <queries>
+26-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:45:5-50:15
+27        <intent>
+27-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:46:9-49:18
+28            <action android:name="android.intent.action.PROCESS_TEXT" />
+28-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:47:13-72
+28-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:47:21-70
+29
+30            <data android:mimeType="text/plain" />
+30-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:48:13-50
+30-->/home/bernas/AndroidStudioProjects/drone_motores/android/app/src/main/AndroidManifest.xml:48:19-48
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+34-->[com.github.harry1453:android-bluetooth-serial:v1.1] /home/bernas/.gradle/caches/transforms-3/1ffbaf0e6f52aa731ed7d95cb8960118/transformed/jetified-android-bluetooth-serial-v1.1/AndroidManifest.xml:12:5-74
+34-->[com.github.harry1453:android-bluetooth-serial:v1.1] /home/bernas/.gradle/caches/transforms-3/1ffbaf0e6f52aa731ed7d95cb8960118/transformed/jetified-android-bluetooth-serial-v1.1/AndroidManifest.xml:12:22-71
+35
+36    <application
+37        android:name="android.app.Application"
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.6.0] /home/bernas/.gradle/caches/transforms-3/2579a7de00054bf46a8dbc332552f622/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+41        android:label="drone_motores" >
+42        <activity
+43            android:name="com.example.drone_motores.MainActivity"
+44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+45            android:exported="true"
+46            android:hardwareAccelerated="true"
+47            android:launchMode="singleTop"
+48            android:theme="@style/LaunchTheme"
+49            android:windowSoftInputMode="adjustResize" >
+50
+51            <!--
+52                 Specifies an Android theme to apply to this Activity as soon as
+53                 the Android process has started. This theme is visible to the user
+54                 while the Flutter UI initializes. After that, this theme continues
+55                 to determine the Window background behind the Flutter UI.
+56            -->
+57            <meta-data
+58                android:name="io.flutter.embedding.android.NormalTheme"
+59                android:resource="@style/NormalTheme" />
+60
+61            <intent-filter>
+62                <action android:name="android.intent.action.MAIN" />
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+65            </intent-filter>
+66        </activity>
+67        <!--
+68             Don't delete the meta-data below.
+69             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+70        -->
+71        <meta-data
+72            android:name="flutterEmbedding"
+73            android:value="2" />
+74
+75        <uses-library
+75-->[androidx.window:window:1.0.0-beta04] /home/bernas/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+76            android:name="androidx.window.extensions"
+76-->[androidx.window:window:1.0.0-beta04] /home/bernas/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+77            android:required="false" />
+77-->[androidx.window:window:1.0.0-beta04] /home/bernas/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+78        <uses-library
+78-->[androidx.window:window:1.0.0-beta04] /home/bernas/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+79            android:name="androidx.window.sidecar"
+79-->[androidx.window:window:1.0.0-beta04] /home/bernas/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0-beta04] /home/bernas/.gradle/caches/transforms-3/032f4dff274e516110d9363a9793a3e3/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+81    </application>
+82
+83</manifest>
